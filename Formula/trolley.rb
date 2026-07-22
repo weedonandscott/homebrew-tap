@@ -1,26 +1,26 @@
 class Trolley < Formula
   desc "Terminal workspace manager powered by Ghostty"
   homepage "https://github.com/weedonandscott/trolley"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/weedonandscott/trolley/releases/download/v#{version}/trolley-cli-aarch64-macos.tar.xz"
-      sha256 "603e819e66dd58751d361e00404e54244d41c077153f13fb6e930df463df365b"
+      sha256 "7d2ad3d5426c41494d5975a82030773566587b18b83b3e7fb538ee4145049100"
     else
       url "https://github.com/weedonandscott/trolley/releases/download/v#{version}/trolley-cli-x86_64-macos.tar.xz"
-      sha256 "fc7abb874433500857f2134019e8e298f7ba5e135f1e94529930aa3d44e5ae00"
+      sha256 "47f026cd0ffc6643e505ddd209f65ba56e5ff5f33bc90546dd07941e89c235f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/weedonandscott/trolley/releases/download/v#{version}/trolley-cli-aarch64-linux.tar.xz"
-      sha256 "429133588d00020eaa36ccacac24a909cf8f4d4a1188fc5d168da33351a0db89"
+      sha256 "8f387819a87829ef1217c06667f75c7d7268e505dab0621d3f55d3c1a6f95886"
     else
       url "https://github.com/weedonandscott/trolley/releases/download/v#{version}/trolley-cli-x86_64-linux.tar.xz"
-      sha256 "d394bde0f1e8f091307e1e4577a1441b6eca2ed423c7b3b6f109769e6b12516b"
+      sha256 "c2fbf43dc4b14324f7e2ea7c1f6e6d9f9d65c89af0e99c96b4e20438d265094a"
     end
   end
 
